@@ -2,6 +2,9 @@
 @import "constants";
 @import "./components/main-nav";
 @import "./components/footer";
+@import "./components/header";
+@import "./components/search";
+@import "./components/articles";
 
 body {
     color: @main-font-colour;
@@ -9,13 +12,34 @@ body {
 }
 
 h1 {
-    font-size: @main-header-size
+    font-size: @main-header-size;
+    text-transform: uppercase;
+    color: @second-font-colour;
 }
 
 h2 {
-    font-size: @main-second-header-size
+    font-size: @second-header-size;
+    text-transform: uppercase;
 }
 
 h3 {
-    font-size: @main-third-header-size
+    font-size: @third-header-size;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: @main-font-colour;
+}
+
+.container {
+    width: 100%;
+}
+
+#content {
+    margin-top: 50px;
+}
+
+#articles {
+    margin-top: 20px;
 }

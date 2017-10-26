@@ -1,5 +1,5 @@
-const path = require('path');
-const webpack = require('webpack');
+var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
     entry: [
@@ -16,19 +16,19 @@ module.exports = {
     },
     module: {
         rules: [
-          { test: /\.(ts|tsx)$/, use: { loader: "ts-loader" } },
-          {
-              test: /\.less$/, 
+            { test: /\.(ts|tsx)$/, use: { loader: "ts-loader" } },
+            {
+                test: /\.less$/,
                 use: [
-                        { loader: "style-loader" }, 
-                        { loader: "css-loader" }, 
-                        { loader: "less-loader" }
-                ],
-          },
-          { test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, use: { loader: "file-loader"}},
-          { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, use: { loader: "file-loader"}},
-          { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, use: { loader: "file-loader"}},
-          { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, use: { loader: "file-loader"}}
+                    "style-loader",
+                    { loader: "css-loader", options: { sourceMap: true } },
+                    { loader: "less-loader", options: { sourceMap: true } }
+                ]
+            },
+            { test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, use: { loader: "file-loader" } },
+            { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, use: { loader: "file-loader" } },
+            { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, use: { loader: "file-loader" } },
+            { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, use: { loader: "file-loader" } }
         ]
     }
 };

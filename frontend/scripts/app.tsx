@@ -3,6 +3,8 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import MainNav from './components/main-nav';
 import Footer from './components/footer';
+import Articles from './components/articles';
+import SubjectNav from './components/subject-nav';
 
 export default class App extends React.Component<void, void> {
 
@@ -13,15 +15,20 @@ export default class App extends React.Component<void, void> {
     public render() {
         return  <div className="container">
                     <div className="row">
-                        <div className="col-4">
+                        <div className="col-md-2">
                             <MainNav />
                         </div>
-                        <div className="col-8">
-                            <h1>Content</h1>
+                        <div id="content" className="col-md-10">
+                            <div className="row">
+                                <SubjectNav />
+                                <Articles />
+                                <div className="col-md-2">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-md-12">
                             <Footer />
                         </div>
                     </div>

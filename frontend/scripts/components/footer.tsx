@@ -17,7 +17,15 @@ export default class Footer extends React.Component<FooterProps, FooterState> {
 
     public render() {
         return  <div id="footer">
-                    Footer
+                    <div id="logos">
+                        <img src="/images/bcslogo.jpg" />
+                        <img src="/images/certificazionemcsd.png" />
+                        <img src="/images/MCAD-NET-logo-BW.jpg" />
+                        <img src="/images/MCSA-WebApps-logo-Blk.jpg" />
+                        <img src="/images/MCTS-ShareP10Config-logo-BW.jpg" />
+                        <img src="/images/MCTS-MSOSPSvrConf-logo-BW.jpg" />
+                        <img src="/images/Special_ProgHTML5_Blk.jpg" />
+                    </div>
                 </div>
     }
 }

@@ -1,16 +1,16 @@
 {
-  "compilerOptions": {
-    "noImplicitAny": false,
-    "noEmitOnError": true,
-    "removeComments": false,
-    "sourceMap": true,
-    "target": "es5",
-    "jsx": "react",
-    "moduleResolution": "node",
-    "module": "commonjs",
-    "noEmitHelpers": false
-  },
-  "exclude": [
-    "node_modules"
-  ]
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "noEmitOnError": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "target": "es2015",
+        "jsx": "react",
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "noEmitHelpers": false
+    },
+    "exclude": [
+        "node_modules"
+    ]
 }
